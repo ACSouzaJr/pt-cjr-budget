@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Budget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+  <div class="container-image">
+    
+    <img src="img/money.jpg" alt="#">
+
+    <div class="centered">
+  
+      <div class="text-white">
+        <p class="">Available Budget in <span id="date"></span></p>
+        <h1 id="total-budget"><span id="">+</span> <span id="total-amount">00.00</span></h1>
+      </div>
+    
+      <div class="container-size">
+
+        <div class="alert alert-success">
+          <p class="m-0 text-left">
+            <span class="p-2 text-dark">INCOME</span> 
+            <span class="direita">
+              + <span class="mr-4" id="income">0.00</span>
+            </span>
+          </p>
+        </div>
+        <div class="alert alert-danger">
+          <p class="m-0 text-left">
+            <span class="p-2 text-dark">EXPENSES</span>
+            <span class="direita mr-4">
+              - <span id="expense">0.00</span>
+              <span class="badge badge-danger px-2 ml-1" id="percent">...</span>
+            </span>
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container-fluid d-flex justify-content-center bg-light">
+
+    <form class="form-inline" action="#" id="add-amount">
+    
+      <select class="custom-select m-3 mr-sm-2" id="sign">
+        <option value="+">+</option>
+        <option value="-">-</option>
+      </select>
+      
+      <input type="text" class="form-control m-3 mr-sm-2" id="name" placeholder="Add description" required>
+    
+      <input type="text" class="form-control m-3 mr-sm-2" id="amount" placeholder="Value" required>
+    
+      <input type="submit" class="btn btn-outline-primary m-3">
+      
+    </form>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <div id="incomes">
+          <h3 class="mb-4 text-success">INCOME</h3>
+          <ul class="list-group list-group-flush"></ul>
+        </div>
+      </div>
+      <div class="col">
+        <div id="expenses">
+          <h3 class="mb-4 text-danger">EXPENSES</h3>
+          <ul class="list-group list-group-flush"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

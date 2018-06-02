@@ -1,0 +1,27 @@
+.container-image {
+  position: relative;
+  text-align: center;
+}
+
+.alert-income {
+  background: blue;
+}
+
+.direita{
+  right: 0;
+  position: absolute;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25em;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+  filter: brightness(50%);
+}
