@@ -55,7 +55,7 @@ class HTML {
     li.classList.add('list-group-item-danger');
     li.querySelector('span').innerHTML += `
     <span class="badge badge-danger px-2 ml-2">
-    ${ budget.income != 0 ? Math.abs(amount / budget.income).toFixed(2) * 100 + '%': '...'}
+    ${ budget.income != 0 ? (Math.abs(amount / budget.income) * 100).toFixed(2) + '%': '...'}
     </span>`;
     document.getElementById('expenses').appendChild(li);
   }
